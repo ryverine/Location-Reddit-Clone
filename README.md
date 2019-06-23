@@ -17,11 +17,11 @@ In Bash navigate to your `location-reddit-clone` directory and run `npm i`.
 
 Right now we only care about the connection to our local database, but we will also put API keys and JAWS info in here later.
 
-`# MYSQL
-DB_USERNAME="root"
-DB_PASSWORD="your_mysql_password"
-DB_DATABASE="store_finder_db"
-DB_HOST="localhost"`
+    # MYSQL
+    DB_USERNAME="root"
+    DB_PASSWORD="your_mysql_password"
+    DB_DATABASE="store_finder_db"
+    DB_HOST="localhost"
 
 ### Run the Application 
 
