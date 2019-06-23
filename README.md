@@ -20,7 +20,7 @@ Right now we only care about the connection to our local database, but we will a
     # MYSQL
     DB_USERNAME="root"
     DB_PASSWORD="your_mysql_password"
-    DB_DATABASE="store_finder_db"
+    DB_DATABASE="database_name"
     DB_HOST="localhost"
 
 ### Run the Application 
