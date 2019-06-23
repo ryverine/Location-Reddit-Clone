@@ -23,6 +23,8 @@ Right now we only care about the connection to our local database, but we will a
     DB_DATABASE="database_name"
     DB_HOST="localhost"
 
+Change `your_mysql_password` to your password, and change `database_name` to the name of the database.
+
 ### Run the Application 
 
 In Bash navigate to your `location-reddit-clone` directory and run `node server`.
