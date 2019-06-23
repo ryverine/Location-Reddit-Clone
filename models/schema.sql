@@ -1,5 +1,5 @@
-DROP DATABASE IF EXISTS exampledb;
-CREATE DATABASE exampledb;
+-- DROP DATABASE IF EXISTS exampledb;
+CREATE DATABASE store_finder_db;
+USE store_finder_db;
 
-DROP DATABASE IF EXISTS testdb;
-CREATE DATABASE testdb;
+
