@@ -1,0 +1,195 @@
+
+
+===========================================
+
+Project Requirements
+
+
+
+This document outlines the base requirements for Project 2.
+
+
+
+
+Requirements
+
+
+
+Your project must:
+
+
+
+
+Use a Node and Express Web Server;
+
+
+Be backed by a MySQL Database an ORM (not necessarily Sequelize);
+
+
+Have both GET and POST routes for retrieving and adding new data;
+
+
+Be deployed using Heroku (with Data);
+
+
+Utilize at least one new library, package, or technology that we haven’t discussed;
+
+Have a polished frontend / UI;
+
+
+Have folder structure that meets MVC Paradigm;
+
+Meet good quality coding standards (indentation, scoping, naming).
+
+
+Must not expose sensitive API key information on the server, see Protecting-API-Keys-In-Node.md
+
+===========================================
+
+Using Sequelize with associations and scopes with includes in multiple files
+
+https://stackoverflow.com/questions/34407193/using-sequelize-with-associations-and-scopes-with-includes-in-multiple-files
+
+
+===========================================
+
+
+
+
+===========================================
+
+
+
+
+
+===========================================
+
+
+
+
+===========================================
+
+
+
+
+
+===========================================
+
+
+
+
+===========================================
+
+using an enviroment variable for local sequelize configuration
+
+https://stackoverflow.com/questions/38757728/using-an-enviroment-variable-for-local-sequelize-configuration
+
+
+JSON the right format for config? #77
+
+https://github.com/sequelize/cli/issues/77
+
+
+===========================================
+
+Top 20 NC cities by Population
+
+https://en.wikipedia.org/wiki/List_of_municipalities_in_North_Carolina
+
+
+
+===========================================
+
+Sequelize Timestamps
+
+http://docs.sequelizejs.com/manual/models-definition.html#configuration
+
+https://stackoverflow.com/questions/20386402/sequelize-unknown-column-createdat-in-field-list
+
+Example:
+https://lorenstewart.me/2016/09/12/sequelize-table-associations-joins/
+
+===========================================
+
+https://lorenstewart.me/2016/09/12/sequelize-table-associations-joins/
+
+Declaring associations in a config file
+There are three Sequelize associations relevant to our example: 
+hasOne
+belongsTo
+hasMany
+
+===========================================
+
+Adding a line break in MySQL INSERT INTO text
+https://stackoverflow.com/questions/2902888/adding-a-line-break-in-mysql-insert-into-text
+
+
+===========================================
+
+Per-attribute validators and allowNull
+
+If a particular field of a model is set to not allow null (with allowNull: false) and that value has been set to null, all validators will be skipped and a ValidationError will be thrown.
+
+On the other hand, if it is set to allow null (with allowNull: true) and that value has been set to null, only the built-in validators will be skipped, while the custom validators will still run.
+
+
+
+===========================================
+
+
+	name:
+      description:
+      brand:
+      quantity:
+      price:
+StoreID
+
+===========================================
+
+
+NO. 32 CINNAMON FUNNEL CAKE NS
+BEARD VAPE CO.
+19.99
+
+NO. 71 SWEET AND SOUR PEACH
+BEARD VAPE CO.
+28.99
+
+LUCID KIT
+GEEK VAPE
+$42.00
+
+ORION Q ALL-IN-ONE POD SYSTEM
+LOST VAPE
+$45.00
+
+ICE MONSTER MANGERINE GUAVA
+JAM MONSTER
+$29.99
+
+600MG NATURAL DAILY OILS
+Camel City Hemp
+$79.99
+
+
+300MG CITRUS DAILY OILS
+Camel City Hemp
+$49.99
+
+===========================================
+
+name
+description
+brand
+quantity
+price
+
+
+===========================================
+
+
+
+
+
+
