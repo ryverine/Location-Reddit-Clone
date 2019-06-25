@@ -58,6 +58,28 @@ module.exports = function(app) {
     });
   });
 
+
+    // load store page
+  // page for specific store
+  app.get("/product/:id", function(req, res) 
+  {
+    db.Product.findOne(
+    { 
+      where: { id: req.params.id }
+    }).then(function(dbProduct) 
+    {
+      console.log("------------------------------");
+      //console.log("dbProduct", dbProduct);
+      //console.log("dbProduct.name", dbProduct.name);
+      //var prodName = dbProduct.name;
+      //console.log("dbProds", prods);
+      console.log("------------------------------");
+      res.render("product", {
+        product: dbProduct
+      });
+    });
+  });
+
   /* Load example page and pass in an example by id
   app.get("/example/:id", function(req, res) 
   {
