@@ -509,7 +509,7 @@ $("input").prop('disabled', false);
 
         API.updateComment(updatedComment).then(function(data)
         {
-          alert("data",data);
+          //alert("data",data);
           location.reload();
         });
     }
