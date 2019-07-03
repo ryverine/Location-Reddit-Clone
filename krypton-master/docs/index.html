@@ -22,8 +22,16 @@
     <link rel="stylesheet" href="assets/js/aos/aos.css">
 
 </head>
+<div class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+        <!-- Any other Bulma elements you want -->
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+</div>
 
 <body>
+
     <!-- Pageloader -->
     <div class="pageloader is-theme"></div>
     <div class="infraloader is-active"></div>
@@ -77,7 +85,7 @@
 
                                 <!-- Sign in -->
                                 <div class="navbar-item is-nav-link">
-                                    <a href="ico.html" class="button k-button k-primary raised has-gradient rounded">
+                                    <a href="login.html" class="button k-button k-primary raised has-gradient rounded">
                                         <span class="text">Log In / Sign Up</span>
                                         <span class="front-gradient"></span>
                                     </a>
@@ -131,7 +139,7 @@
                                 </div>
                                 <!-- Sign in -->
                                 <div class="navbar-item">
-                                    <a href="ico.html" class="button k-button k-primary raised has-gradient rounded">
+                                    <a href="login.html" class="button k-button k-primary raised has-gradient rounded">
                                         <span class="text">Log In / Sign Up</span>
                                         <span class="front-gradient"></span>
                                     </a>
@@ -150,25 +158,25 @@
 
                         <!-- Landing page Title -->
                         <div class="column is-5 landing-caption">
-                            <h1 class="title is-1 is-light is-semibold is-spaced main-title">The power to find CBD rests
-                                in the palm of your hand.
+                            <h1 class="title is-1 is-light is-semibold is-spaced main-title">Never be without <br /> CBD
+                                ever again.
+
                             </h1>
                             <h2 class="subtitle is-4 is-light is-thin">
-                                Route420 makes it quick and easy to find and rate CBD suppliers in your community.
+                                Find what you want and where it's sold.
                             </h2>
                             <!-- Search bar -->
-                            <div class="field is-grouped">
-                                <p class="control is-expanded">
-                                    <input class="input" type="text" placeholder="Type a product name">
-                                </p>
-                                <p class="control">
-                                    <a class="button k-button k-primary raised has-gradient is-info">
-                                        Search
-                                    </a>
-                                </p>
-                            </div>
+                            <form action="products.html" method="get">
 
+                                <div class="field is-grouped">
 
+                                    <p class="control is-expanded">
+                                        <input class="input" type="text" placeholder="Type a product name">
+                                    </p>
+                                    <button class="button k-button k-primary has-gradient is-info"
+                                        type="submit">Search</button>
+                                </div>
+                            </form>
                         </div>
                         <!-- Hero image -->
                         <div class="column is-5 is-offset-1">
@@ -300,12 +308,13 @@
                                         <div class="ico-card animated preFadeInUp fadeInUp">
                                             <!-- Countdown -->
                                             <div class="text-content">
-                                                <h4 class="title is-4 is-light animated preFadeInUp fadeInUp">This is only the beginning to the journey down Route420.
+                                                <h4 class="title is-4 is-light animated preFadeInUp fadeInUp">This is
+                                                    only the beginning to the journey down Route420.
                                                 </h4>
                                                 <h4 class="title is-6 is-light animated preFadeInUp fadeInUp">
-                                                        Create your account and become a contributing member of the 420
-                                                        community.
-                                                    </h4>
+                                                    Create your account and become a contributing member of the 420
+                                                    community.
+                                                </h4>
                                             </div>
 
                                             <!-- Progress bar -->
@@ -356,7 +365,7 @@
                                     <!-- Tab image -->
                                     <div class="column is-5">
                                         <img class="animated preFadeInUp fadeInUp"
-                                            src="assets/images/illustrations/tokens.svg" alt="">
+                                            src="assets/images/illustrations/searches.svg" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -368,7 +377,8 @@
                                     <!-- Tab content -->
                                     <div class="column is-5 is-offset-1">
                                         <div class="text-content">
-                                            <h4 class="title is-6 is-light animated preFadeInUp fadeInUp">VIEW LISTINGS OF CBD SUPPLIER LOCATIONS IN YOUR AREA</h4>
+                                            <h4 class="title is-6 is-light animated preFadeInUp fadeInUp">VIEW LISTINGS
+                                                OF CBD SUPPLIER LOCATIONS IN YOUR AREA</h4>
                                             <ul class="custom-bullet-list">
                                                 <li class="animated preFadeInUp fadeInUp">
                                                     <span>Store Listings</span>
@@ -721,8 +731,8 @@
             <!-- Logo -->
             <div class="footer-logo">
                 <a href="#">
-                    <img src="assets/images/logo/route420-icon.svg" alt="" data-aos="fade-up" data-aos-delay="100" data-aos-offset="200"
-                    data-aos-easing="ease-out-quart">
+                    <img src="assets/images/logo/route420-icon.svg" alt="" data-aos="fade-up" data-aos-delay="100"
+                        data-aos-offset="200" data-aos-easing="ease-out-quart">
                     <div class="brand-name">Route420</div>
                     <div class="brand-subtitle">CBD supply locator</div>
                 </a>
@@ -779,10 +789,11 @@
                 </div>
             </div>
             <!-- Copyright -->
-            <p class="k-copyright">© 2019 | Route420  All Rights Reserved</p>
+            <p class="k-copyright">© 2019 | Route420 All Rights Reserved</p>
             <br>
             <!-- Made by -->
-            <p class="coded-by">Web design and development by: <a href="https://" target="_blank">CBD Digital Group</a></p>
+            <p class="coded-by">Web design and development by: <a href="https://" target="_blank">CBD Digital Group</a>
+            </p>
         </div>
 
         <!-- Absolute image -->
