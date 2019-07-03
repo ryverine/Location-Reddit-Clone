@@ -13,7 +13,7 @@
 		('Cloud Vape Lounge','Cloud Vape Lounge:\nLorem ipsum sapien arcu aliquam condimentum risus ullamcorper orci integer, sem porta gravida id nam scelerisque maecenas at, porta curabitur viverra turpis vehicula facilisis porta lacus.\nQuis imperdiet tempus suscipit morbi vel faucibus ac dictumst pulvinar, pharetra sed aenean eget aenean risus sollicitudin viverra neque metus, feugiat mollis curae tincidunt vehicula nisl condimentum pulvinar non dolor dui rhoncus integer orci.\nHac fames euismod sagittis metus integer elit duis nec ante, odio nulla fringilla praesent adipiscing porttitor tellus ac, mollis tempus consequat urna interdum blandit egestas vivamus blandit rhoncus sem lorem praesent tellus volutpat orci.','88 Gobo St','','11111','1'),
 		('Tobacco land & Vape Shop CBD Kratom Shop','Tobacco land & Vape Shop CBD Kratom Shop:\nLorem ipsum sapien arcu aliquam condimentum risus ullamcorper orci integer, sem porta gravida id nam scelerisque maecenas at, porta curabitur viverra turpis vehicula facilisis porta lacus.\nQuis imperdiet tempus suscipit morbi vel faucibus ac dictumst pulvinar, pharetra sed aenean eget aenean risus sollicitudin viverra neque metus, feugiat mollis curae tincidunt vehicula nisl condimentum pulvinar non dolor dui rhoncus integer orci.\nHac fames euismod sagittis metus integer elit duis nec ante, odio nulla fringilla praesent adipiscing porttitor tellus ac, mollis tempus consequat urna interdum blandit egestas vivamus blandit rhoncus sem lorem praesent tellus volutpat orci.','221 Frog Hop Ln','','11112','1'),
 		('Smoke Rings Smoke Shop','Smoke Rings Smoke Shop:\nLorem ipsum sapien arcu aliquam condimentum risus ullamcorper orci integer, sem porta gravida id nam scelerisque maecenas at, porta curabitur viverra turpis vehicula facilisis porta lacus.\nQuis imperdiet tempus suscipit morbi vel faucibus ac dictumst pulvinar, pharetra sed aenean eget aenean risus sollicitudin viverra neque metus, feugiat mollis curae tincidunt vehicula nisl condimentum pulvinar non dolor dui rhoncus integer orci.\nHac fames euismod sagittis metus integer elit duis nec ante, odio nulla fringilla praesent adipiscing porttitor tellus ac, mollis tempus consequat urna interdum blandit egestas vivamus blandit rhoncus sem lorem praesent tellus volutpat orci.','733 Crab Claw Ct','','11113','1'),
-		('Bubba's Bud Shop','','123 Main St','','21111','2'),
+		('Bubbas Bud Shop','','123 Main St','','21111','2'),
         ('Vape Naysh','','227 Green Ave','Block #34','21112','2'),
         ('Vapor River','','48 Bop-town Rd','','21113','2'),
 		('TOBACCO OUTLET & Vape Shop','','734 Blam St','','31111','3'),
@@ -77,15 +77,15 @@ VALUES
     
     
     
-    INSERT INTO users (id, first_name,last_name,email,password)
-    VALUES
+INSERT INTO users (id, first_name,last_name,email,password)
+VALUES
 	("1", "Matthew", "Allen", "matt@dankcity.com", "Welcome001"),
 	("2", "Isabella","Merendino","isabella@dankcity.com", "Welcome002"),
 	("3", "Jared","Test","jared@dankcity.com", "Welcome003"),
 	("4", "Ryan","Cheek","ryan@dankcity.com", "Welcome004");
     
 
- INSERT INTO store_comments (id, comment, updatedAt, StoreID, UserID) 
+ INSERT INTO store_comments (id, comment, createdAt, updatedAt, StoreID, UserID) 
     VALUES
     (1, "test comment 1", now(), now(), 1, 1),
     (2, "test comment 2", now(), now(), 2, 2),
