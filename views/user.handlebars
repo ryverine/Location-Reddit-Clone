@@ -1,0 +1,53 @@
+<div id="user">
+  <div class="container">
+    <div class="row">
+      <div class="col-8 offset-2">
+        <h4><a href="/">Home</a></h4>
+        <h4><a href="/locations">All Locations</a></h4>
+        <h4><a id="user-profile-link" href="/user">User Profile</a></h4>
+        <div><button id="btn-signout">Sign-Out</button></div>
+
+        <div>
+        {{#if user}}
+            <h1>Welcome back, {{user.first_name}}!</h1>
+            <h3>Your Info</h3>
+            <div id="user-profile-section" data-user="{{user.id}}"> 
+                Name: {{user.first_name}} {{user.last_name}} <br>
+                Email: {{user.email}}
+            </div>
+            <div>
+                <h3>Comments You Have Made:</h3>
+                {{#each user.Store_Comments}}
+                <div> 
+                    
+                    <strong>Store: </strong><a href="/store/{{Store.id}}">{{Store.name}}</a><br>
+                    <strong>Posted: </strong>{{updatedAt}}<br>
+                    <strong>Comment: </strong><br>
+                    
+                    <form>
+                        <textarea class="user-comment-textarea" readonly>{{comment}}</textarea><br>
+
+                        <button class="user-edit-comment" data-comment="{{id}}" data-store="{{Store.id}}">Edit</button>
+
+                        <button class="user-save-comment" data-comment="{{id}}" data-store="{{Store.id}}" style="display:none;">Save/Cancel</button>
+
+                        <button class="user-delete-comment" data-comment="{{id}}" data-store="{{Store.id}}">Delete</button>
+                    </form>
+                    <hr>
+                </div>
+                {{/each}}
+            </div>
+        {{else}}
+            <h1>Unknown User</h1>
+            <h4>
+                <a href="/signin">Return to Sign-In</a></h4>
+            </h4>
+        {{/if}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="/js/index.js"></script>
