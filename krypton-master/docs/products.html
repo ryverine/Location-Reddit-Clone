@@ -168,10 +168,21 @@
             </div>
         </section>
 
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>This is store information and comments</p>
+            </div>
+
+        </div> 
+
         <!-- Content wrapper -->
         <div class="content-wrapper is-large">
             <div class="columns">
-                <div class="column is-12">
+                <div class="column is-8 is-offset-2">
 
                     <!-- Accordion -->
                     <div class="accordion">
@@ -179,44 +190,22 @@
                         <div class="accordion-option">
                             <input type="checkbox" id="toggle1" class="accordion-toggle" />
                             <label class="accordion-title" for="toggle1">
-                                <img class="accordion-post" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkID2q3iJtUHwpnZgJrOHbUMsoVtaKBeJW-1X7YoFZZJNcOymb" alt="product thumbnail"/>
-                                    Meds Biotech CBD Oil
+                                <img class="accordion-post"
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkID2q3iJtUHwpnZgJrOHbUMsoVtaKBeJW-1X7YoFZZJNcOymb"
+                                    alt="product thumbnail" />
+                                Meds Biotech CBD Oil
                             </label>
                             <div class="accordion-content">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
                                     veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                    commodo consequat. </p>
-                            </div>
-                        </div>
-
-                        <!-- Option -->
-                        <div class="accordion-option">
-                            <input type="checkbox" id="toggle2" class="accordion-toggle" />
-                            <label class="accordion-title" for="toggle2">
-                                    <img class="accordion-post" src="https://www.onyxandrose.com/wp-content/uploads/2019/05/Tincture_THC_Bottle_Package_DARK.jpg" alt="product thumbnail"/>
-                                    Onyx & Rose Full Spectrum CBD Oil
-                            </label>
-                            <div class="accordion-content">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                    commodo consequat. </p>
-                            </div>
-                        </div>
-
-                        <!-- Option -->
-                        <div class="accordion-option">
-                            <input type="checkbox" id="toggle3" class="accordion-toggle" />
-                            <label class="accordion-title" for="toggle3">
-                                    <img class="accordion-post" src="https://www.charlottesweb.com/media/catalog/product/c/b/cbd-oil-max-strength.jpg" alt="product thumbnail"/>
-                                    Charlotte's Web CBD Oil
-                            </label>
-                            <div class="accordion-content">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                    commodo consequat. </p>
+                                    commodo consequat.
+                                    <br><br>
+                                    <!-- Trigger/Open The Modal -->
+                                    <button
+                                        class="button k-button is-primary is-primary has-gradient modal-button rounded popup"
+                                        id="myBtn">View Stores</button>
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -312,6 +301,42 @@
     <script src="assets/js/roadmap.js"></script>
     <script src="assets/js/main.js" defer="defer"></script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        // When the user clicks on div, open the popup
+        function myFunction() {
+            var popup = document.getElementById("myPopup");
+            popup.classList.toggle("show");
+        }
+    </script>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
 </body>
 
 </html>
