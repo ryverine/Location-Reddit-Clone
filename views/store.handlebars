@@ -4,8 +4,11 @@
       <div class="col-8 offset-2">
         <h4><a href="/">Home</a></h4>
         <h4><a href="/locations">All Locations</a></h4>
+        <h4><a id="user-profile-link" href="/user">User Profile</a></h4>
+        <div><button id="btn-signout">Sign-Out</button></div>
+
         <div>
-            <h1>{{store.name}}</h1>
+            <h1 id="store-name" data-store-id={{store.id}}>{{store.name}}</h1>
             <div> 
                 Address Line 1: {{store.addrln1}}<br>
                 Address Line 2: {{store.addrln2}}<br>
@@ -15,13 +18,13 @@
                  <h3>Description:</h3>
                  {{store.description}}<br>
             </div>
+
             <div>
                 <h3>Products</h3>
                 {{#each store.Products}}
                 <div> 
                 <strong><a href="/product/{{id}}">{{name}}</a></strong>
                 <p>
-                    <strong>Name: </strong>{{name}}<br>
                     <strong>Description: </strong>{{description}}<br>
                     <strong>Brand: </strong>{{brand}}<br>
                     <strong>Quantity: </strong>{{quantity}}<br>
@@ -29,6 +32,38 @@
                 </p>
                 </div>
                 {{/each}}
+            </div>
+
+            <div>
+
+              <h3>User Comments</h3>
+
+                <div>
+                  <!-- SECTION TO ADD COMMENT -->
+                    <form id="commentForm" class="clearfix mb-4" method="post">
+                      <div class="form-group">
+                        <label for="example-text">Add  Comment</label>
+                        <textarea id="user-added-comment" class="form-control" aria-describedby="example-text" placeholder="Enter Example Text"></textarea>
+                      </div>
+                    <button id="new-comment-submit" class="btn btn-primary float-right">Submit</button>
+                  </form>
+                </div>
+
+                <div id="user-comment-list">
+                {{#each store.Store_Comments}}
+                  <div class="store-user-comment" data-comment-id="{{id}}">
+                    <h5 data-user-id="{{User.id}}">{{User.first_name}} says:</h5>
+                    <form>
+                    {{comment}}<br>
+                    <strong>Posted:</strong> {{updatedAt}}<br>
+                    <button class="store-edit-comment" data-user-id="{{User.id}}" data-comment-id="{{id}}" style="display:none;">Edit</button>
+                    <button class="store-delete-comment" data-user-id="{{User.id}}" data-comment-id="{{id}}" style="display:none;">Delete</button>
+                    </form>
+                    <hr>
+                  </div>
+                {{/each}}
+              </div>
+
             </div>
         </div>
       </div>

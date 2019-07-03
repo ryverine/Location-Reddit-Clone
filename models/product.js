@@ -40,28 +40,30 @@ module.exports = function(sequelize, DataTypes) {
     },
     {
       timestamps: false
-    },
+    }/*,
     {
-        scopes: {
-            getProductsByName(productName){
-                return {
-                    where: {
-                        name: productName}
-                }
-            },
-            getStores(storeIDArray){
-                return{
-                include: [
-                    { model: Store, where: { 
-                        id: {
-                            [Op.in]: storeIDArray
-                        }
-                    }}
-                  ]
+      scopes:
+      { //Project.scope('random', { method: ['accessLevel', 19]}).findAll();
+        getProductsByName (productName){
+            return {
+                where: {
+                    name: productName
                 }
             }
+        },
+        getStores (storeIDArray){
+            return{
+            include: [
+                { model: Store, where: { 
+                    id: {
+                        [Op.in]: storeIDArray
+                    }
+                }}
+              ]
+            }
         }
-    }
+      }
+    }*/
   );
 
   Product.associate = function(models) {
@@ -74,3 +76,6 @@ module.exports = function(sequelize, DataTypes) {
 
   return Product;
 };
+
+
+
