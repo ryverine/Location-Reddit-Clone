@@ -97,7 +97,7 @@ $(document).ready(function()
 
       for (var i = 0; i < data.length; i++)
       {
-        var storeName = data[i].name;
+        var storeName = data[i].name + " (" + data[i].city + ", " + data[i].state + ")";
         var storeNameDiv = $("<div>");
         var storeLink = $("<a>");
         storeLink.attr("href", "/store/" + data[i].id);
@@ -158,6 +158,7 @@ $(document).ready(function()
   {
     localStorage.removeItem("userData");
     $("#user-profile-link").attr("href", "/user/0");
+    location.reload();
   });
 
   $( "#new-comment-submit" ).click(function(event)
