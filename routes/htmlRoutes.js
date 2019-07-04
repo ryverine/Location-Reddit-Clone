@@ -56,9 +56,6 @@ module.exports = function(app) {
       where: { id: req.params.id }
     }).then(function(dbStore) 
     {
-      //console.log("--------------------------");
-      //console.log("dbStore: ", dbStore);
-      //console.log("--------------------------");
       res.render("store", {
         store: dbStore
       });
@@ -110,16 +107,6 @@ module.exports = function(app) {
       }
     }).then(function(dbUser) 
     {
-      //console.log("------------------------------");
-      //console.log("dbUser: ", dbUser);
-      //console.log("dbUser: " +  dbUser);
-      //console.log("dbUser.length: " +  dbUser.length);
-      // console.log("dbUser[0].User: ", dbUser[0].User);
-      //console.log("dbUser[0].dataValues: ", dbUser[0].dataValues);
-      //console.log("dbUser[0].dataValues.id: ", dbUser[0].dataValues.id);
-      //console.log("------------------------------");
-      // var userID = dbUser[0].dataValues.id;
-
       if(dbUser.length > 0)
       {
         res.json(dbUser[0].dataValues);
