@@ -3,7 +3,6 @@ var seq = require("sequelize");
 
 module.exports = function(app) {
 
-  // Load index page
   app.get("/", function(req, res) 
   {
       res.render("index", {
@@ -11,8 +10,6 @@ module.exports = function(app) {
       });
   });
 
-  // load locations page
-  // lists all locations
   app.get("/locations", function(req, res) 
   {
     db.Location.findAll({
@@ -25,8 +22,6 @@ module.exports = function(app) {
     });
   });
 
-  // load location page
-  // page for specific location 
   app.get("/locations/:id", function(req, res) 
   {
     db.Location.findOne(
@@ -41,9 +36,6 @@ module.exports = function(app) {
     });
   });
 
-
-  // load store page
-  // page for specific store
   app.get("/store/:id", function(req, res) 
   {
     db.Store.findOne(
@@ -62,9 +54,6 @@ module.exports = function(app) {
     });
   });
 
-
-    // load store page
-  // page for specific store
   app.get("/product/:id", function(req, res) 
   {
     db.Product.findOne(
@@ -77,17 +66,6 @@ module.exports = function(app) {
       });
     });
   });
-
-
-  /* Load example page and pass in an example by id
-  app.get("/example/:id", function(req, res) 
-  {
-    db.Example.findOne({ where: { id: req.params.id } }).then(function(dbExample) {
-      res.render("example", {
-        example: dbExample
-      });
-    });
-  });*/
 
   app.get('/signin', function(req, res) {
     res.render("signin", {});
@@ -122,14 +100,6 @@ module.exports = function(app) {
         res.json(emptyUser);
       }
 
-      // this was used when form 
-      // res.render("user", {user: dbUser[0]});
-
-      // redirect to /user/id of user
-      // res.redirect("/user/" + userID);
-
-
-      //res.json(dbProducts);
     }).catch(function(error){
       console.log("------------------------------");
       console.log(error);
@@ -137,9 +107,6 @@ module.exports = function(app) {
     });
     
   });
-
-
-
 
   app.get('/user/:id', function(req, res) {
     db.User.findOne({
@@ -158,7 +125,6 @@ module.exports = function(app) {
       res.render("user", {});
   });
 
-  // Render 404 page for any unmatched routes
   app.get("*", function(req, res) {
     res.render("404");
   });
