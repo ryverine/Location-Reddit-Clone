@@ -164,7 +164,7 @@ $(document).ready(function()
   {
     event.preventDefault();
     var localStorageData = JSON.parse(localStorage.getItem('userData'));
-    if(localStorageData != null &&)
+    if(localStorageData != null)
     {
       var user = Number.parseInt(localStorageData.id);
       if(user != 0)
