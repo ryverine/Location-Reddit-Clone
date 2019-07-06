@@ -1,25 +1,172 @@
-<div id="Products">
-  <div class="container">
-    <div class="row">
-      <div class="col-8 offset-2">
-        <h4><a href="/">Home</a></h4>
-        <h4><a href="/locations">All Locations</a></h4>
-        <h4><a id="user-profile-link" href="/user">User Profile</a></h4>
-        <div><button id="btn-signout">Sign-Out</button></div>
-        
-        <h1>Product Search Results</h1>
-        <div>
-          {{#each searchResults}}
-          <div> 
-            <a href="/product/{{id}}">{{name}}</a><br>
-            {{brand}}
-          </div>
-          {{/each}}
-        </div> 
-      </div>
-    </div>
-  </div>
-</div>
+    <!-- Pageloader -->
+    <div class="pageloader is-theme"></div>
+    <div class="infraloader is-active"></div>
+    <div class="token-wrapper">
+        <!-- Hero -->
+        <section class="hero is-small">
+            <div class="hero-head">
+                <!-- Cloned navbar -->
+                <!-- Cloned navbar that comes in on scroll -->
+                <nav id="navbar-clone" class="navbar is-fixed is-dark">
+                    <div class="container">
+                        <!-- Brand -->
+                        <div class="navbar-brand">
+                            <a href="index.html" class="navbar-item">
+                                <img class="" src="assets/images/logo/route420-icon.svg" alt="">
+                                <span class="brand-name">Route420</span>
+                            </a>
+                            <!-- Responsive toggle -->
+                            <span class="navbar-burger burger" data-target="cloneNavbarMenu">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </span>
+                        </div>
+                        <!-- Menu -->
+                        <div id="cloneNavbarMenu" class="navbar-menu">
+                            <div class="navbar-end">
+                                <!-- Menu item -->
+                                <div class="navbar-item is-nav-link">
+                                    <a class="is-centered-responsive" href="index.html">Home</a>
+                                </div>
+                                <!-- Menu item -->
+                                <div class="navbar-item is-nav-link">
+                                    <a class="is-centered-responsive" href="products.html">Products</a>
+                                </div>
+                                <!-- Menu item -->
+                                <div class="navbar-item is-nav-link">
+                                    <a class="is-centered-responsive" href="roadmap.html">Roadmap</a>
+                                </div>
+                                <!-- Menu item -->
+                                <div class="navbar-item is-nav-link">
+                                    <a class="is-centered-responsive" href="blog.html">Media</a>
+                                </div>
+                                <!-- Menu item -->
+                                <div class="navbar-item is-nav-link">
+                                    <a class="is-centered-responsive" href="contact.html">
+                                        <img class="telegram" src="assets/images/logo/telegram.svg" alt="Email icon">
+                                        Contact Us
+                                    </a>
+                                </div>
 
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="/js/index.js"></script>
+                                <!-- Sign in -->
+                                <div class="navbar-item is-nav-link">
+                                    <a href="login.html" class="button k-button k-primary raised has-gradient rounded">
+                                        <span class="text">Log In / Sign Up</span>
+                                        <span class="front-gradient"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <!-- /Cloned navbar -->
+                <!-- Static navbar -->
+                <nav class="navbar is-light">
+                    <div class="container">
+                        <!-- Brand -->
+                        <div class="navbar-brand">
+                            <a href="index.html" class="navbar-item">
+                                <img class="" src="assets/images/logo/route420-icon.svg" alt="Route420-app-logo-svg">
+                                <span class="brand-name">Route420</span>
+                            </a>
+                            <!-- Responsive toggle -->
+                            <span class="navbar-burger burger" data-target="navbarMenu">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </span>
+                        </div>
+                        <!-- Menu -->
+                        <div id="navbarMenu" class="navbar-menu light-menu">
+                            <div class="navbar-end">
+                                <!-- Menu item -->
+                                <div class="navbar-item is-nav-link">
+                                    <a class="is-centered-responsive" href="index.html">Home</a>
+                                </div>
+                                <!-- Menu item -->
+                                <div class="navbar-item is-nav-link">
+                                    <a class="is-centered-responsive" href="products.html">Products</a>
+                                </div>
+                                <!-- Menu item -->
+                                <div class="navbar-item is-nav-link">
+                                    <a class="is-centered-responsive" href="roadmap.html">Roadmap</a>
+                                </div>
+                                <!-- Menu item -->
+                                <div class="navbar-item is-nav-link">
+                                    <a class="is-centered-responsive" href="blog.html">Media</a>
+                                </div>
+                                <!-- Menu item -->
+                                <div class="navbar-item is-nav-link">
+                                    <a class="is-centered-responsive" href="contact.html">
+                                        <img class="telegram" src="assets/images/logo/telegram.svg" alt="">
+                                        Contact Us
+                                    </a>
+                                </div>
+                                <!-- Sign in -->
+                                <div class="navbar-item">
+                                    <a href="login.html" class="button k-button k-primary raised has-gradient rounded">
+                                        <span class="text">Log In / Sign Up</span>
+                                        <span class="front-gradient"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <!-- /Static navbar -->
+            </div>
+
+            <div class="hero-body has-text-centered">
+                <div class="columns">
+                    <div class="column is-6 is-offset-3">
+                        <h1 class="title is-2 is-light is-semibold is-spaced main-title">Products</h1>
+                        <h2 class="subtitle is-5 is-light is-thin">
+                            Search for your CBD product.
+                        </h2>
+
+                        <!-- Search bar -->
+                        <div class="field is-grouped">
+                            <p class="control is-expanded">
+                                <input class="input" type="text" placeholder="Type a product name">
+                            </p>
+                            <p class="control">
+                                <a class="button k-button k-primary raised has-gradient is-info">
+                                    Find It
+                                </a>
+                                <span class="front-gradient"></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="columns">
+
+                    <div class="column is-12">
+                        <!-- Content wrapper -->
+                        <div class="content-wrapper">
+
+                            <!-- Post -->
+                            <div class="blog-post">
+                                <a href="productinfo.html">
+                                    <!-- Featured image -->
+                                    <div class="featured-image">
+                                        <img class="accordion-post" src="assets/images/media/cbd-trends-post1.jpg"
+                                            alt="CBD Business Opportunity-post-thumbnail">
+                                    </div>
+                                    <!-- Content -->
+                                    <div class="content">
+                                        <div class="post-title"> Meds Biotech CBD Oil
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div><!-- /Content wrapper -->
+                    </div>
+                </div>
+            </div>
+        </section>
