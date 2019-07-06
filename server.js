@@ -5,6 +5,7 @@ var exphbs = require("express-handlebars");
 var db = require("./models");
 
 var app = express();
+
 var PORT = process.env.PORT || 3000;
 
 // Middleware
@@ -31,7 +32,7 @@ var syncOptions = { force: false };
 // clearing the `testdb`
 if (process.env.NODE_ENV === "test") {
   syncOptions.force = true;
-}
+}  
 
 // Starting the server, syncing our models ------------------------------------/
 db.sequelize.sync(syncOptions).then(function() {
