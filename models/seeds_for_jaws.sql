@@ -2,7 +2,7 @@
 CREATE DATABASE store_finder_db;
 USE store_finder_db;
 
-INSERT INTO locations (city, state)
+INSERT INTO Locations (city, state)
 VALUES
 ('Raleigh','NC'),
 ('Chapel Hill','NC'),
@@ -12,7 +12,7 @@ VALUES
 ('Cary','NC'),
 ('Morrisville','NC');
 
-INSERT INTO stores (name, description, addrln1, addrln2, city, state, zip, LocationID)
+INSERT INTO Stores (name, description, addrln1, addrln2, city, state, zip, LocationID)
 VALUES
 ("The Hemp Store","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum semper dui ac laoreet molestie. Sed aliquet, sapien non aliquet maximus, leo magna congue sem, sed tincidunt libero tortor non tortor. Phasellus sodales ipsum volutpat rhoncus sodales. Praesent vulputate condimentum felis eu aliquam. In ullamcorper metus et nulla rhoncus accumsan. Curabitur tempus, ligula a tincidunt pulvinar, dolor enim congue justo, in iaculis arcu tellus sed enim. Maecenas tincidunt commodo risus vel pharetra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus vel lectus elementum, gravida magna et, varius nunc.","1000 Old Milburnie Rd","Suite 1","Raleigh","NC","27604",1),
 ("The Hemp Store","Cras nec consequat risus. Integer ullamcorper eros non vehicula feugiat. Suspendisse in bibendum ipsum. Vestibulum tincidunt risus quis cursus rhoncus. Donec et congue justo, id pellentesque erat. Mauris eu pellentesque ex, eget pulvinar orci. Phasellus id erat lorem. Nunc porttitor faucibus dui vel vulputate. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut pulvinar volutpat mi, ac maximus sem eleifend sed. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur vitae tortor suscipit, blandit diam vitae, commodo risus. Pellentesque iaculis tortor ut nulla semper tincidunt. Nulla eleifend luctus est.","115 E Franklin St","","Chapel Hill","NC","27514","2"),
@@ -29,8 +29,8 @@ VALUES
 ("Nature's Releaf Hemp Store","Ut massa tellus, dignissim non laoreet ut, dictum ac nulla. Suspendisse aliquet nisi non eros pellentesque imperdiet. Phasellus orci orci, accumsan in mollis ac, bibendum ac tellus. Suspendisse malesuada facilisis nulla vel mollis. Pellentesque tincidunt ac ex eget ullamcorper. Morbi et velit lacinia, tempor urna a, mattis urna. Maecenas et porta urna. Proin placerat mi id blandit luctus. Fusce dui dui, dictum ut orci vitae, semper suscipit lectus. Etiam ultricies semper mi et blandit.","5224 Hollyridge Dr","","Raleigh","NC","27612","1"),
 ("Good Guy Vapes","Ut non ultricies tortor. In eleifend justo et mauris fringilla, a feugiat quam iaculis. Aliquam quis lorem a ex condimentum aliquet. Aliquam rutrum accumsan diam, imperdiet condimentum sem vulputate et. Pellentesque vulputate suscipit pretium. Curabitur risus felis, rutrum ac lectus vitae, hendrerit pretium nisl. Maecenas elementum nunc sed laoreet sodales. Quisque sollicitudin bibendum diam at congue. Interdum et malesuada fames ac ante ipsum primis in faucibus.","10970 Chapel Hill Rd","","Morrisville","NC","27560","7"),
 ("DailyVita","Duis finibus tellus et magna tempus feugiat. Donec vehicula finibus augue id varius. Mauris gravida et erat at tincidunt. Cras leo lacus, sagittis et interdum non, condimentum in nisi. Aliquam lacinia fermentum ante. Quisque eleifend, erat et facilisis euismod, massa nisi imperdiet leo, nec aliquam est ipsum vitae justo. Donec varius leo quis gravida tincidunt. Vivamus mollis accumsan nunc, in ullamcorper velit lacinia nec. Integer tempor purus vitae mattis egestas. Aenean vehicula dui vel nunc luctus, egestas venenatis nisi fermentum. Aenean et neque tempus velit congue vulputate id nec risus.","5408 Apex Peakway","","Apex","NC","27502","4");
-
-INSERT INTO products (name, description, brand, quantity, price, StoreID)
+    
+INSERT INTO Products (name, description, brand, quantity, price, StoreID)
 VALUES
 ("Hempzilla CBD","Hot box at 4:20 the fatty dank endo doobie in a cashed roachclip, Bogart. Wake and bake indica hash at the dispensary in Oregon decriminalized. Crystalized buds from trimming tasty weed pens THC sativa euphoric resinated dome piece. California kush roll it up into a fat blunt for medicinal purposes to elevate your consciousness. Guatemalan purple haze grown outdoors by ganja shaman.","Hempzilla","0","0","14"),
 ("Dinner Lady CBD","Legalize spliffs for recreational Snoop Dogg edibles pusher cannabidiol cartoons. Littering and butter stuff more cerebral high couch lock Abba Zabba you my only friend. Pass the duchie Bob Marley this shatter is hella potent. Rolling down the street smoking endo, laid back. Have you ever tried Lorem Ipsum on Weeeeeeeeeeed?","Dinner Lady","0","0","14"),
@@ -73,15 +73,15 @@ VALUES
 ("The Brothers Apothecary CBD","Make a quick pipe out of an apple and release the carb Purple Haze all around. Rasta! Fully man, keif gummies are the indoor equivalent of body high super mellow. Dude you’re just being paranoid, don’t call the cops. OG grandaddy purps with notes of diesel.","The Brothers Apothecary","0","0","13"),
 ("Gron Chocolates & Tinctures CBD","Hydroponic nacho pop-tarts tetrahydrocannabinol hybrid schwag stems and seeds little orange hairs. The cannabis industry will gravity bong a cotton mouth pizza dipped in ranch. Broccoli bong butterfly gateway drugs to elevate your good vibrations. Taco Bell 4th meal with Doritos Locos tacos and a knife rip on the side. Optimizing dime bags of pre-rolled honey oil dabs.","Gron Chocolates & Tinctures","0","0","13"),
 ("Lazarus Naturals CBD","Hot box at 4:20 the fatty dank endo doobie in a cashed roachclip, Bogart. Wake and bake indica hash at the dispensary in Oregon decriminalized. Crystalized buds from trimming tasty weed pens THC sativa euphoric resinated dome piece. California kush roll it up into a fat blunt for medicinal purposes to elevate your consciousness. Guatemalan purple haze grown outdoors by ganja shaman.","Lazarus Naturals","0","0","13");
- 
-INSERT INTO users (first_name,last_name,email,password)
+
+INSERT INTO Users (first_name,last_name,email,password)
 VALUES
 ("Matthew", "Allen", "matt@dankcity.com", "Welcome001"),
 ("Isabella","Merendino","isabella@dankcity.com", "Welcome002"),
 ("Jared","Test","jared@dankcity.com", "Welcome003"),
 ("Ryan","Cheek","ryan@dankcity.com", "Welcome004");
-
-INSERT INTO store_comments (comment, createdAt, updatedAt, StoreID, UserID) 
+    
+INSERT INTO Store_Comments (comment, createdAt, updatedAt, StoreID, UserID) 
 VALUES
 ("Hot box at 4:20 the fatty dank endo doobie in a cashed roachclip, Bogart.",now(),now(),"1","1"),
 ("Wake and bake indica hash at the dispensary in Oregon decriminalized.",now(),now(),"2","2"),
