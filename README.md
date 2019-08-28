@@ -1,4 +1,27 @@
-# Location-Reddit-Clone
+# Route 420
+
+Note: Repo name is relic of inital project idea.
+
+## Team
+
+Isabella https://github.com/merendinoir
+
+Matt https://github.com/JustMrMatt
+
+Jared (https://github.com/jdwuxui)[https://github.com/jdwuxui]
+
+Ryan [https://github.com/ryverine](https://github.com/ryverine)
+
+## Technologies
+
+ * HTML
+ * CSS
+ * Javascript
+ * Node.js
+ * MySQL
+ * Sequelize
+ * Express
+ * Handlebars
 
 
 ## Running Application from Node Command Line
