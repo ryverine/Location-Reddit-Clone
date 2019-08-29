@@ -1,27 +1,32 @@
 # Route 420
 
-Note: Repo name is relic of inital project idea.
+Front-End Deploy:  https://jdwuxui.github.io/route420CBD/
+
+Back-End Deploy:  https://secret-journey-43125.herokuapp.com/
+
+Note: Repo name is relic of inital project idea. 
 
 ## Team
 
-Isabella https://github.com/merendinoir
+Jared | https://github.com/jdwuxui | Primary front-end dev. Working with Bulma and Sass.
 
-Matt https://github.com/JustMrMatt
+Ryan | https://github.com/ryverine | Primary back-end dev. Working with Node, MySQL, Sequelize, and Handlebars.
 
-Jared (https://github.com/jdwuxui)[https://github.com/jdwuxui]
+Isabella | https://github.com/merendinoir | Secondary back-end dev and tester.
 
-Ryan [https://github.com/ryverine](https://github.com/ryverine)
+Matt | https://github.com/JustMrMatt | Secondary front-end dev and tester.
 
 ## Technologies
 
  * HTML
  * CSS
+ * [Bulma](https://bulma.io/)
  * Javascript
  * Node.js
  * MySQL
- * Sequelize
+ * [Sequelize](https://www.npmjs.com/package/sequelize)
  * Express
- * Handlebars
+ * [Handlebars](https://www.npmjs.com/package/express-handlebars)
 
 
 ## Running Application from Node Command Line
