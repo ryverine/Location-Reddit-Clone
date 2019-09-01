@@ -2,7 +2,7 @@
 
 Front-End Deploy:  https://jdwuxui.github.io/route420CBD/
 
-Back-End Deploy:  https://secret-journey-43125.herokuapp.com/
+Back-End Deploy:  https://route420.herokuapp.com/
  * Use "user@email.com” and “welcome1” to sign in under test user account.
 
 Note: Repo name is relic of inital project idea. 
