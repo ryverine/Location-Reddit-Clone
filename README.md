@@ -9,13 +9,13 @@ Note: Repo name is relic of inital project idea.
 
 ## Team
 
-Jared | https://github.com/jdwuxui | Primary front-end dev. Working with Bulma and Sass.
+__Jared__ | https://github.com/jdwuxui | Primary front-end dev. Working with Bulma and Sass.
 
-Ryan | https://github.com/ryverine | Primary back-end dev. Working with Node, MySQL, Sequelize, and Handlebars.
+__Ryan__ | https://github.com/ryverine | Primary back-end dev. Working with Node, MySQL, Sequelize, and Handlebars.
 
-Isabella | https://github.com/merendinoir | Secondary back-end dev and tester.
+__Isabella__ | https://github.com/merendinoir | Secondary back-end dev and tester.
 
-Matt | https://github.com/JustMrMatt | Secondary front-end dev and tester.
+__Matt__ | https://github.com/JustMrMatt | Secondary front-end dev and tester.
 
 ## Technologies
 
